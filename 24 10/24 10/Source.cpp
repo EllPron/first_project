@@ -21,7 +21,10 @@ public:
 		return 3.14 * r * r;
 		
 	}
-
+	void printAllData() {
+		cout << "длина окружности: " <<dl(r) << endl;
+		cout << "S окружности: " << S(r);
+	}
 
 };
 
@@ -31,7 +34,6 @@ int main() {
 	cout << "r? = ";
 	cin >> r;
 	kryg res{r};
-	cout << "длина окружности: " <<res.dl(r)<<endl;
-	cout << "S окружности: " <<res.S(r);
+	res.printAllData();
 
 }
